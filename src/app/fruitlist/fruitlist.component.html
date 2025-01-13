@@ -1,1 +1,3 @@
-<p>fruitlist works!</p>
+@for (item of fruitlist; track item.name; let index = $index) {
+    <p> {{index + 1}} {{item.name}}</p>
+}
