@@ -33,7 +33,9 @@
                                 }
                             }
                         }
-                        <p [ngStyle]="{color: fontColor}">({{item.stars}})</p>
+
+                        <p [ngStyle]="{'color': item.stars > 3 ? fontColorPositiv : fontColorNegativ}">({{item.stars}})</p>
+
                     </div>
                 </div>
                 <div><b>Art:</b><br>{{item.genus}}</div>
