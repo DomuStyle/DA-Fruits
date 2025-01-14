@@ -33,8 +33,11 @@
                                 }
                             }
                         }
-
-                        <p [ngStyle]="{'color': item.stars > 3 ? fontColorPositiv : fontColorNegativ}">({{item.stars}})</p>
+                        <!-- EXAMPLE ngStyle with ternary operator -->
+                        <!-- <p [ngStyle]="{'color': item.stars > 3 ? fontColorPositiv : fontColorNegativ}">({{item.stars}})</p> -->
+                        
+                        <!-- EXAMPLE ngClass -->
+                        <p [ngClass]="{'fontColorNegativ': item.stars < 3, 'fontColorPositiv': item.stars >= 3}">({{item.stars}})</p>
 
                     </div>
                 </div>
