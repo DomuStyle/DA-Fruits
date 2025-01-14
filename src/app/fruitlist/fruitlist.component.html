@@ -1,7 +1,7 @@
 <div class="fruitlist_content">
     @for(singlefruit of fruitlist; track singlefruit.name; let index = $index){
 
-        <app-singlefruit (fruitName)="nameLog($event)" [fruit]="singlefruit"></app-singlefruit>
+        <app-singlefruit (fruitName)="addComment($event, index)" [fruit]="singlefruit"></app-singlefruit>
 
         <!-- onclick from JS is "(click)" in TS -->
         <!-- <app-singlefruit (click)="numLog(index)" [fruit]="singlefruit"></app-singlefruit> -->
