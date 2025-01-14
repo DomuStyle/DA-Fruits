@@ -37,6 +37,7 @@
                 
                 <!-- EXAMPLE ngClass -->
                 <!-- <p [ngClass]="{'fontColorNegativ': fruit.stars < 3, 'fontColorPositiv': fruit.stars >= 3}">({{fruit.stars}})</p> -->
+
                 <p>({{fruit.stars}})</p>
             </div>
         </div>
@@ -50,7 +51,7 @@
                     No comments entered yet. If you know the Taste, then be the first!
                 }
             </div>
-            <div><input type="text"><button><img src="./assets/img/arrow-35-32.png" alt="" srcset=""></button>
+            <div><input [(ngModel)]="inputData" type="text"><button><img (click)="sendInputData()" src="./assets/img/arrow-35-32.png" alt="" srcset=""></button>
             </div>
         </div>
     </div>

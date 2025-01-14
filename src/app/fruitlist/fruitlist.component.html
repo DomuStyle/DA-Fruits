@@ -1,6 +1,13 @@
 <div class="fruitlist_content">
     @for(singlefruit of fruitlist; track singlefruit.name; let index = $index){
-      
-        <app-singlefruit [fruit]="singlefruit"></app-singlefruit>
+
+        <app-singlefruit (fruitName)="nameLog($event)" [fruit]="singlefruit"></app-singlefruit>
+
+        <!-- onclick from JS is "(click)" in TS -->
+        <!-- <app-singlefruit (click)="numLog(index)" [fruit]="singlefruit"></app-singlefruit> -->
+
+        <!-- EXAMPLE: for mouse hover event in TS -->
+        <!-- <app-singlefruit (mouseover)="numLog(index)" [fruit]="singlefruit"></app-singlefruit> -->
+        
     }
 </div>
