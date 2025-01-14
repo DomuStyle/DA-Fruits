@@ -11,9 +11,6 @@ import { SinglefruitComponent } from "./singlefruit/singlefruit.component";
 })
 export class FruitlistComponent {
 
-  fontColorPositiv = 'green';
-  fontColorNegativ = 'red';
-
   fruitlist = [
     {
       name: "Apfel",
